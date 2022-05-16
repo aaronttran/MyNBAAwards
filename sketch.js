@@ -1,4 +1,4 @@
-let gameState = 'main';
+let gameState = 'title';
 var click1;
 var click2;
 var click22;
@@ -48,6 +48,21 @@ function setup() {
 //  canvas.parent("sketch-holder");
   frameRate(60);
 
+  mvpPicker = new Clickable();
+  mvpPicker.locate(width / 8.4, height / 2.5);
+  mvpPicker.width = width / 4.5;
+  mvpPicker.height = height / 2;
+  mvpPicker.strokeWeight = 4;
+  mvpPicker.color = "#ededed";
+  mvpPicker.text = "Most Valuable Player";
+  mvpPicker.textFont = "sans-serif";
+  mvpPicker.textSize = 30;
+  mvpPicker.cornerRadius = 30;
+  mvpPicker.onPress = function() {
+    if (gameState === 'title') {
+        gameState = 'mvp';
+  }
+}
 
   click1 = new Clickable();
   click1.locate(0, 0);
@@ -370,11 +385,11 @@ function setup() {
 
 function draw() {
   switch (gameState) {
-    case 'main':
-      newTitleScreen();
-      break;
     case 'title':
-      titleScreen();
+      TitleScreen();
+      break;
+    case 'mvp':
+      mvpTitle();
       break;
     case 'starter':
       gameStage1();
@@ -437,12 +452,7 @@ function draw() {
 }
 
 function mousePressed() {
-  if (gameState === 'main') {
-    if (mouseIsPressed === true) {
-      gameState = 'title';
-    }
-  }
-  if (gameState === 'title') {
+  if (gameState === 'mvp') {
     if (mouseIsPressed === true) {
       gameState = 'starter';
   }
@@ -455,16 +465,21 @@ function mousePressed() {
   }
 }
 
-  function newTitleScreen() {
+  function TitleScreen() {
+    mvpPicker.draw();
     textSize(80);
     textFont("Segoe UI");
     textAlign(CENTER);
     textStyle(BOLD);
     fill(0);
-    text("New Title Screen", width / 2, height / 2.3);
+    text("Who Are Your Winners of These NBA Awards?", width / 2, height / 5);
+    textSize(50);
+    textFont("Georgia");
+    fill(255, 0, 0);
+    text("Select an Award", width / 2, height / 3.6);
   }
 
-  function titleScreen() {
+  function mvpTitle() {
     textSize(80);
     textFont("Segoe UI");
     textAlign(CENTER);
