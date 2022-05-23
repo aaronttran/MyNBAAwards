@@ -26,6 +26,7 @@ let timerLength = 500; //length of the timer (in milliseconds)
 let timerCount = 0; //number of times the timer has reset
 */
 //let img = [];
+
 let img1;
 let img2;
 let img3;
@@ -41,25 +42,26 @@ let img12;
 let img13;
 let img14;
 let img15;
+
 //let numImgs = 6;
 let basketballs = [];
 
 function preload(){
 //  img1 = loadImage('assets/background.jpg');
-  img2 = loadImage('assets/mvpjerseys.jpg');
-  img3 = loadImage('assets/rookiejerseys.jpg');
-  img4 = loadImage('assets/green.jpg');
-  img5 = loadImage('assets/jones.jpg');
-  img6 = loadImage('assets/wagner.jpg');
-  img7 = loadImage('assets/cunningham.jpg');
-  img8 = loadImage('assets/barnes.jpg');
-  img9 = loadImage('assets/mobley.jpg');
-  img10 = loadImage('assets/durant.jpg');
-  img11 = loadImage('assets/tatum.jpg');
-  img12 = loadImage('assets/booker.jpg');
-  img13 = loadImage('assets/antetokounmpo.jpg');
-  img14 = loadImage('assets/embiid.jpg');
-  img15 = loadImage('assets/jokic.jpg');
+  img2 = loadImage('mvpjerseys.jpg');
+  img3 = loadImage('rookiejerseys.jpg');
+  img4 = loadImage('green.jpg');
+  img5 = loadImage('jones.jpg');
+  img6 = loadImage('wagner.jpg');
+  img7 = loadImage('cunningham.jpg');
+  img8 = loadImage('barnes.jpg');
+  img9 = loadImage('mobley.jpg');
+  img10 = loadImage('durant.jpg');
+  img11 = loadImage('tatum.jpg');
+  img12 = loadImage('booker.jpg');
+  img13 = loadImage('antetokounmpo.jpg');
+  img14 = loadImage('embiid.jpg');
+  img15 = loadImage('jokic.jpg');
 }
 
 function setup() {
