@@ -27,7 +27,7 @@ let timerCount = 0; //number of times the timer has reset
 */
 //let img = [];
 
-let img1;
+//let img1;
 let img2;
 let img3;
 let img4;
