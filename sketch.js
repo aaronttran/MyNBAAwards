@@ -45,7 +45,7 @@ let img15;
 let basketballs = [];
 
 function preload(){
-  img1 = loadImage('assets/background.jpg');
+//  img1 = loadImage('assets/background.jpg');
   img2 = loadImage('assets/mvpjerseys.jpg');
   img3 = loadImage('assets/rookiejerseys.jpg');
   img4 = loadImage('assets/green.jpg');
