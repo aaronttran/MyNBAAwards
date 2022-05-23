@@ -27,7 +27,6 @@ let timerCount = 0; //number of times the timer has reset
 */
 //let img = [];
 
-//let img1;
 let img2;
 let img3;
 let img4;
@@ -47,7 +46,6 @@ let img15;
 let basketballs = [];
 
 function preload(){
-//  img1 = loadImage('assets/background.jpg');
   img2 = loadImage('assets/mvpjerseys.jpg');
   img3 = loadImage('assets/rookiejerseys.jpg');
   img4 = loadImage('assets/green.jpg');
